@@ -3,6 +3,8 @@ name: Python CI application
 
 ##Identify Events that trigger the workflow
 on:
+  workflow_dispatch:  
+    # Above line enables manual triggering
   push:
     branches: [ "main" ]
   pull_request:
